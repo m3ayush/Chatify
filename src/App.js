@@ -34,7 +34,7 @@ function App() {
 
   useEffect(()=>{
     //Instead of const username= prompt('Please enter your name') we are passing like this (in a function way)
-    setUsername(prompt('Please enter your name'));
+    setUsername(prompt('Enter your username'));
 
 
   },[] /*dependency(condition)*/)
@@ -80,16 +80,38 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello {username} 🚀👋</h1>
-      <h3>Welcome to Chatify🔥🔥</h3>
+      <h1 className='header'>Hello {username} 🚀👋</h1>
+      <h3 className='header'>Welcome to Chatify🔥🔥</h3>
       
       <form className='app__form'>
         <FormControl className='app__formControl'>
-          <Input className='app__input' placeholder='Enter the message.' value={input} onChange={event => setInput(event.target.value)}/>
+          <Input className='app__input' placeholder='Enter the message.'
+          inputProps={{
+            style: {
+              color: '#f6d4b1', // Color of the text
+              '::placeholder': {
+                color: '#f6d4b1', // Color of the placeholder
+                opacity: 1,    // Make sure placeholder is fully visible
+                
+              },
+            },
+          }}
+          sx={{
+            '&:before': {
+              borderBottom: '2px solid #424140', // Change the color before focus
+            },
+            '&:hover:not(.Mui-disabled):before': {
+              borderBottom: '2px solid #585654', // Change the color when hovering
+            },
+            '&:after': {
+              borderBottom: '2px solid #f6d4b1', // Change the color after focus
+            },
+          }}
+          value={input} onChange={event => setInput(event.target.value)}/>
 
           <IconButton className='app__icon' disabled={!input} variant="contained" type='submit' onClick={sendMessage}
           sx={{
-            color: input ? '#0b81ff' : 'grey', // Blue when enabled, grey when disabled
+            color: input ? '#f6d4b1' : 'cbb29b', // Blue when enabled, grey when disabled
           }}
           >
             <SendIcon/>

@@ -10,7 +10,7 @@ const Message=forwardRef(({message, username}, ref)=> {
             <Card className={isUser? "message__usercard":"message__guestcard"}> 
             <CardContent>
                 <Typography
-                    color='black'
+                    
                     variant='h5'
                     component="h2"
                 >

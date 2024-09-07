@@ -8,12 +8,13 @@
   position: fixed;
   bottom: 0;
   z-index: 1;
-  background-color: #e9e9eb;
+  background-color: #424140;
   width: 85%;
   margin-top:10px;
   margin-left:10px;
   margin-right:10px;
   border-radius: 50px;
+  
 }
 
 .app__formControl{
@@ -26,4 +27,12 @@
 }
 .app__input{
   flex:1;
+}
+.app__input::placeholder{
+  color:#f6d4b1 !important;
+}
+.header{
+  padding:5px;
+  color:#f6d4b1;
+  background-color: #424140;
 }

@@ -17,13 +17,14 @@
 }
 
 .message__usercard{
-    background-color: #0b81ff !important;
+    background-color: #525252 !important;
     border-radius: 30px !important;
-    
+    color:#f6d4b1 !important;
 }
 
 .message__guestcard{
-    background-color: #e9e9eb !important;
+    background-color: #f6d4b1 !important;
     border-radius: 30px !important;
-    
+    border: 1px solid #525252;
+    color: #525252 !important;
 }
