@@ -1,0 +1,29 @@
+.message__container {
+    padding-bottom: 80px; /* Prevent overlap with input form */
+
+}
+
+.message{
+    width:fit-content;
+    padding:10px;
+    margin:10px;
+    
+}
+.message__user{
+    margin-left: auto;
+    color:white;
+    text-align: left !important;
+    
+}
+
+.message__usercard{
+    background-color: #0b81ff !important;
+    border-radius: 30px !important;
+    
+}
+
+.message__guestcard{
+    background-color: #e9e9eb !important;
+    border-radius: 30px !important;
+    
+}
