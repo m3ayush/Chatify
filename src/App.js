@@ -86,7 +86,7 @@ function App() {
       <form className='app__form'>
         <FormControl className='app__formControl'>
           <Input className='app__input' placeholder='Enter the message.'
-          inputProps={{
+          inputProps={{ //for mui
             style: {
               color: '#f6d4b1', // Color of the text
               '::placeholder': {
@@ -96,7 +96,7 @@ function App() {
               },
             },
           }}
-          sx={{
+          sx={{ //for mui
             '&:before': {
               borderBottom: '2px solid #424140', // Change the color before focus
             },
